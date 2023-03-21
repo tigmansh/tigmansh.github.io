@@ -66,11 +66,14 @@ let skill_arr=[
     "./images/css.png",
     "./images/js.png",
     "./images/nodejslogo.png",
+    "./images/express.png",
+    "./images/mongoose.png",
     "./images/mongodb.png",
     "./images/sql.jpg",
+    "./images/redis.png",
     "./images/aws.png",
-    "./images/github.png",
-    "./images/netlify.png"
+    "./images/git.png",
+    
 ];
 let skill_name=[
     
@@ -78,11 +81,13 @@ let skill_name=[
     "CSS",
     "JavaScript",
     "Node.JS",
-    "MongoDB",
+    "EXPRESS.JS",
+    "MONGOOSE",
+    "MONGODB",
     "SQL",
+    "REDIS",
     "AWS",
-    "GitHub",
-    "Netlify"
+    "GIT",
 ]
 let count=0;
 AppendSkills=(arr)=>{
