@@ -1,8 +1,8 @@
-document.getElementById("res1").addEventListener("click",()=>{
+document.getElementById("resume-link-1").addEventListener("click",()=>{
 window.open("https://drive.google.com/file/d/1WpgDFD5117vI0FJqaOSq8Amw-Cx8R5sd/view?usp=share_link");
 })
 
-document.getElementById("res2").addEventListener("click",()=>{
+document.getElementById("resume-link-2").addEventListener("click",()=>{
     window.open("https://drive.google.com/file/d/1WpgDFD5117vI0FJqaOSq8Amw-Cx8R5sd/view?usp=share_link");
 })
 
@@ -89,9 +89,16 @@ AppendSkills=(arr)=>{
 container.innerHTML=null;
     arr.forEach((ele)=>{
         let div= document.createElement("div");
+
+        div.classList.add("skills-card");
+
         let img=document.createElement("img");
         img.src=ele;
+        img.classList.add("skills-card-img")
+
         let name=document.createElement("h2");
+        name.classList.add("skills-card-name");
+        
         name.innerText=skill_name[count];
         name.style.color="white";
         count++;
