@@ -13,6 +13,9 @@
   <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
+  <link rel="stylesheet" href="https://unpkg.com/sweetalert/dist/sweetalert.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
   <link rel="shortcut icon" href="./images/portfolio-favicon.png" type="image/x-icon">
 </head>
 
@@ -64,9 +67,13 @@
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
           <p id="user-detail-intro">
-            I'm a skilled full-stack web developer experienced in HTML, CSS, JavaScript, Node.js, and MongoDB. I'm passionate about creating dynamic and visually appealing web applications and have collaborated on projects to create user-friendly interfaces and streamline user experiences.
+            I'm a skilled full-stack web developer experienced in HTML, CSS, JavaScript, Node.js, and MongoDB. I'm
+            passionate about creating dynamic and visually appealing web applications and have collaborated on projects
+            to create user-friendly interfaces and streamline user experiences.
             <br><br>
-            I enjoy problem-solving and constantly strive to learn new technologies and techniques to improve my skills. I believe that effective communication, attention to detail, and a strong work ethic are essential for delivering high-quality projects that exceed expectations.
+            I enjoy problem-solving and constantly strive to learn new technologies and techniques to improve my skills.
+            I believe that effective communication, attention to detail, and a strong work ethic are essential for
+            delivering high-quality projects that exceed expectations.
             <br><br>
             I'm excited about the opportunity to work with you as a full-stack web developer.
           </p>
@@ -207,7 +214,8 @@
             </p>
             <div>
               <a href="https://github.com/tigmansh/Chat-App" target="_blank" class="project-github-link">Github</a>
-              <a href="https://heroic-phoenix-a63603.netlify.app/" target="_blank" class="project-deployed-link">Live</a>
+              <a href="https://heroic-phoenix-a63603.netlify.app/" target="_blank"
+                class="project-deployed-link">Live</a>
             </div>
           </div>
         </div>
@@ -257,7 +265,8 @@
               <i class="fa-solid fa-square-phone"></i> +91-8306842406</a>
           </p>
           <p>
-            <a href="https://www.google.com/maps/place/Beawar,+Rajasthan/@26.1231876,74.2776996,12z/data=!3m1!4b1!4m6!3m5!1s0x396970b3e8f41283:0x957915f749945fa7!8m2!3d26.104585!4d74.3199038!16zL20vMDgwY2wx" id="contact-phone">
+            <a href="https://www.google.com/maps/place/Beawar,+Rajasthan/@26.1231876,74.2776996,12z/data=!3m1!4b1!4m6!3m5!1s0x396970b3e8f41283:0x957915f749945fa7!8m2!3d26.104585!4d74.3199038!16zL20vMDgwY2wx"
+              id="contact-phone">
               <i class="fa-solid fa-location"></i>Beawar(Raj.) India</a>
           </p>
           <div class="social-icons">
@@ -269,17 +278,19 @@
         </div>
         <div class="contact-right">
           <form name="submit-to-google-sheet">
-            
+
             <input type="text" name="name" placeholder="Your Name" required />
-            
+
             <input type="email" name="email" placeholder="Your Email" required />
-            
+
             <textarea name="message" rows="6" placeholder="Your Message" style="resize:none;" required></textarea>
-            
+
+            <audio src="./audio/success.mp3" id="success-sound"></audio>
+
             <button type="submit" class="btn2">Submit</button>
 
           </form>
-          <span id="msg"></span>
+
         </div>
       </div>
     </div>
@@ -289,10 +300,6 @@
       </p>
     </div>
   </div>
-
-  <!-- Sending mail -->
-
-
 </body>
 
 </html>

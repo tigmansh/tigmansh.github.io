@@ -1,3 +1,5 @@
+var successSound = document.getElementById("success-sound");
+
 document.getElementById("resume-link-1").addEventListener("click", () => {
   window.open(
     "https://drive.google.com/file/d/1WpgDFD5117vI0FJqaOSq8Amw-Cx8R5sd/view?usp=share_link"
@@ -42,10 +44,8 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
-      msg.innerHTML = "Message Sent Successfully";
-      setTimeout(() => {
-        msg.innerHTML = "";
-      }, 5000);
+      successSound.play();
+      swal("", "Message Sent Successfully", "success");
       form.reset();
     })
     .catch((error) => console.error("Error!", error.message));
